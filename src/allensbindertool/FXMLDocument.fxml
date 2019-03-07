@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -12,16 +13,23 @@
       <ImageView fx:id="imageView" fitHeight="239.0" fitWidth="297.0" layoutX="88.0" layoutY="133.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
       <ChoiceBox fx:id="choiceBox1" layoutX="32.0" layoutY="38.0" prefHeight="27.0" prefWidth="48.0" />
       <ChoiceBox fx:id="choiceBox2" layoutX="82.0" layoutY="38.0" prefHeight="27.0" prefWidth="48.0" />
-      <ChoiceBox fx:id="choiceBoxRem" layoutX="310.0" layoutY="38.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceBoxRem" layoutX="362.0" layoutY="38.0" prefHeight="27.0" prefWidth="100.0" snapToPixel="false" AnchorPane.bottomAnchor="416.0" />
       <Label id="sectionLabel" layoutX="32.0" layoutY="14.0" text="Section" />
-      <Label id="actionLabel" fx:id="label2" layoutX="347.0" layoutY="14.0" text="" />
-      <ChoiceBox fx:id="choiceBox3" layoutX="132.0" layoutY="38.0" prefHeight="27.0" prefWidth="48.0" />
-      <ChoiceBox fx:id="choiceBox4" layoutX="182.0" layoutY="38.0" prefHeight="27.0" prefWidth="48.0" />
-      <ChoiceBox fx:id="choiceBox5" layoutX="232.0" layoutY="38.0" prefHeight="27.0" prefWidth="48.0" />
-      <TextField fx:id="textField" layoutX="310.0" layoutY="84.0" prefHeight="27.0" prefWidth="150.0" />
+      <Label id="actionLabel" fx:id="remLabel" layoutX="362.0" layoutY="14.0" prefHeight="18.0" prefWidth="81.0" text="Remediation" />
+      <ChoiceBox fx:id="choiceBox3" layoutX="139.0" layoutY="38.0" prefHeight="27.0" prefWidth="98.0" AnchorPane.bottomAnchor="416.0" />
+      <ChoiceBox fx:id="choiceBox4" layoutX="249.0" layoutY="38.0" prefHeight="27.0" prefWidth="100.0" AnchorPane.bottomAnchor="416.0" />
+      <TextField fx:id="textField" layoutX="248.0" layoutY="71.0" prefHeight="27.0" prefWidth="216.0" AnchorPane.rightAnchor="9.0" />
       <Button id="saveButton" fx:id="saveButton" layoutX="256.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="27.0" prefWidth="98.0" text="Save Image" />
       <Label id="pathLabel" fx:id="pathLabel" alignment="CENTER" layoutX="66.0" layoutY="440.0" prefHeight="27.0" prefWidth="341.0" wrapText="true" />
       <Button id="saveButton" fx:id="folderBtn" layoutX="122.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleFolderButtonAction" prefHeight="27.0" prefWidth="98.0" text="Folder" />
       <Label id="dirLabel" fx:id="dirLabel" alignment="CENTER" layoutX="66.0" layoutY="372.0" prefHeight="27.0" prefWidth="341.0" textAlignment="CENTER" wrapText="true" />
+      <CheckBox fx:id="appendBox" layoutX="32.0" layoutY="76.0" mnemonicParsing="false" text="Change Pic #" AnchorPane.leftAnchor="33.0" />
+      <Label id="picNum" fx:id="picNum" layoutX="89.0" layoutY="42.0" prefHeight="18.0" prefWidth="27.0" />
+      <Label fx:id="viewLabel" layoutX="139.0" layoutY="14.0" prefHeight="17.0" prefWidth="81.0" />
+      <Label fx:id="condLabel" layoutX="249.0" layoutY="13.0" prefHeight="18.0" prefWidth="81.0" text="Cond/Hazard" />
+      <Label fx:id="picNumTitle" layoutX="89.0" layoutY="13.0" prefHeight="18.0" prefWidth="27.0" text="Pic#" />
+      <ChoiceBox fx:id="choiceBox31" layoutX="139.0" layoutY="71.0" prefHeight="27.0" prefWidth="98.0" />
+      <CheckBox fx:id="checkDelete" layoutX="32.0" layoutY="98.0" mnemonicParsing="false" text="Scan Deletes" AnchorPane.leftAnchor="33.0" />
+      <Button fx:id="sortButton" layoutX="256.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleSortButton" prefHeight="27.0" prefWidth="98.0" text="Sort" />
    </children>
 </AnchorPane>

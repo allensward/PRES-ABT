@@ -23,7 +23,7 @@ public class AllensBinderTool extends Application {
         
         Scene scene = new Scene(root);
         
-        stage.setTitle("ABT Version 1.0");
+        stage.setTitle("ABT Alpha-Version");
         stage.setScene(scene);
         stage.show();
     }
